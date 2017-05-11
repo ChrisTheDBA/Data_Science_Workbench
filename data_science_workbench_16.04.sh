@@ -63,8 +63,8 @@ sudo apt-get update
 sudo apt-get -yy install r-base r-base-dev
 sudo sed -i 's@R_LIBS_USER@#R_LIBS_USER@' /usr/lib/R/etc/Renviron
 sudo sed -i 's@##R_LIBS_USER@R_LIBS_USER@' /usr/lib/R/etc/Renviron
-sudo wget https://download2.rstudio.org/rstudio-server-0.99.903-amd64.deb
-sudo gdebi -n rstudio-server-0.99.903-amd64.deb
+sudo wget https://download2.rstudio.org/rstudio-server-1.0.143-amd64.deb
+sudo gdebi -n rstudio-server-1.0.143-amd64.deb
 rserver_config="/etc/rstudio/rserver.conf"
 rsession_config="/etc/rstudio/rsession.conf"
 sudo touch $rserver_config
