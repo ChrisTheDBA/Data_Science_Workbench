@@ -67,8 +67,8 @@ sudo apt-get update
 sudo apt-get -yy install r-base r-base-dev
 sudo sed -i 's@R_LIBS_USER@#R_LIBS_USER@' /usr/lib/R/etc/Renviron
 sudo sed -i 's@##R_LIBS_USER@R_LIBS_USER@' /usr/lib/R/etc/Renviron
-sudo wget https://download2.rstudio.org/rstudio-server-0.99.451-amd64.deb
-sudo gdebi -n rstudio-server-0.99.451-amd64.deb
+sudo wget https://download2.rstudio.org/rstudio-server-1.0.143-amd64.deb
+sudo gdebi -n rstudio-server-1.0.143-amd64.deb
 rserver_config="/etc/rstudio/rserver.conf"
 rsession_config="/etc/rstudio/rsession.conf"
 sudo touch $rserver_config
@@ -84,8 +84,8 @@ echo ""
 echo "Installing Anaconda." 
 echo "###################################################"
 echo ""
-sudo wget "https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh"
-sudo bash Anaconda3-4.2.0-Linux-x86_64.sh -b -p /opt/anaconda3
+sudo wget "https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh"
+sudo bash Anaconda3-4.3.1-Linux-x86_64.sh -b -p /opt/anaconda3
 echo ""
 cd
 echo 'export PATH="/opt/anaconda3/bin:$PATH"' >> ~/.bashrc
@@ -114,8 +114,8 @@ sudo apt-get -yy install openjdk-7-jdk
 export LD_LIBRARY_PATH=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server
 sudo R CMD javareconf  
 sudo su - -c "R -e \"install.packages(c('shiny', 'rmarkdown', 'devtools', 'RCurl'), repos='http://cran.rstudio.com/')\""
-sudo wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.4.6.809-amd64.deb
-sudo sudo gdebi shiny-server-1.4.6.809-amd64.deb
+sudo wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.3.838-amd64.deb
+sudo sudo gdebi shiny-server-1.5.3.838-amd64.deb
 echo ""
 echo ""
 echo "Setting permissions for Shiny"
