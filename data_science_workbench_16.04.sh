@@ -80,7 +80,7 @@ echo "Installing Anaconda."
 echo "###################################################"
 echo ""
 sudo wget "https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh"
-sudo bash Anaconda3-4.3.1-Linux-x86_64.sh -b -p /opt/anaconda3
+sudo bash Anaconda3-4.2.0-Linux-x86_64.sh -b -p /opt/anaconda3
 echo ""
 cd
 echo 'export PATH="/opt/anaconda3/bin:$PATH"' >> ~/.bashrc
